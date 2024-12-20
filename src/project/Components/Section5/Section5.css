@@ -1,0 +1,33 @@
+.left>img{
+    height:450px;
+    
+  }
+  .radio{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      padding-top:20px;
+  }
+  .right{
+      height:450px;
+      font-size:19px;
+      
+       }
+  .email-id{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 10px;
+  }
+  .email-id>button{
+      height: 55px;
+  }
+  .share{
+      background-color:rgb(43, 64, 87);
+  }
+  .google>img{
+      height:100px;
+  }
+  

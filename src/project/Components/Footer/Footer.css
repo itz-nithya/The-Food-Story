@@ -1,0 +1,166 @@
+.footer {
+    width: 100%;
+    max-width: 1200px; 
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 50px; 
+    margin: 0 auto; 
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 20px;
+    }
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.top > .top1 {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    flex-wrap: nowrap; 
+    gap: 20px;
+}
+
+.top1 > img {
+    height: 55px;
+    width: 160px;
+    flex: 1 1 auto; 
+}
+
+.top > .top1 > h2 {
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+    margin: 0; 
+    text-align: center; 
+    flex: 2 1 auto; 
+}
+
+.lang {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    flex: 1 1 auto; 
+}
+
+.lang > select {
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    color: black;
+    font-size: 14px;
+    outline: none;
+    padding: 10px 12px;
+}
+
+.lang > select > option {
+    background-color: whitesmoke;
+    padding: 10px;
+}
+
+/* Ensuring bottom1 behaves as a row */
+.bottom1 {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    flex-wrap: nowrap; /* Prevents row break */
+    gap: 20px; 
+}
+
+.bottomcontent {
+    flex: 1 1 25%; /* Each content takes up 25% of the row */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  /* Align items to the start */
+    text-align: left;  /* Ensures text aligns to the left */
+}
+
+.bottomcontent > h4 {
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0; 
+}
+
+.bottomcontent > p {
+    color: gray;
+    text-align: left;  /* Align text to the left */
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.bottomcontent img {
+    height: 130px;
+    width: 180px;
+    margin-top: 15px;
+}
+
+.links {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    justify-content: center; 
+    align-items: center;
+    flex: 1; 
+}
+
+.links > i {
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.links > i:hover {
+    background-color: #555;
+    transform: scale(1.1);
+}
+
+.bottom > p {
+    text-align: center; 
+    color: gray;
+}
+
+.social {
+    padding-bottom: 12px;
+}
+
+@media (max-width: 768px) {
+    .top > .top1 {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    /* Ensuring all bottom content stays on the same row */
+    .bottom1 {
+        flex-wrap: wrap; 
+        justify-content: space-between; 
+    }
+
+    .bottomcontent {
+        flex: 1 1 100%; 
+        text-align: center; 
+        margin: 10px 0; 
+    }
+
+    .links {
+        justify-content: center; 
+    }
+
+    .lang {
+        justify-content: center; 
+    }
+}

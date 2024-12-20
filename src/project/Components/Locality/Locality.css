@@ -1,0 +1,35 @@
+
+.txt-box{
+    border: 1px solid lightgray;
+    box-shadow:1px 1px 1px 1px lightgray;
+    width: 350px;
+    height: 80px;
+    border-radius: 8px;
+    padding:15px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    align-items: center;
+    gap:15px;
+}
+
+.locality-title>span{
+    font-weight: 500;
+}
+.locality-title{
+    margin-top: 40px;
+    font-weight:350;
+
+    
+}
+@media screen and (min-width:800px) and (max-width:1100px){
+    .title{
+        padding-left: 10px;
+    }
+}
+.arrow{
+    color: black;
+    padding-left: 100px;
+   padding-top: 5px;
+   
+}
